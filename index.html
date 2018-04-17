@@ -1,0 +1,45 @@
+<html>
+
+	<head>
+		<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+		<title>Antani spa - Web To Case</title>
+		<link rel="icon" href="https://getbootstrap.com/dist/css/bootstrap.min.css"></link>
+		<link rel="icon" href="https://getbootstrap.com/docs/4.0/examples/sign-in/signin.css"></link>
+	</head>
+
+	<body class="text-center">
+
+		<form class="form-signin" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+		<img class="mb-4" src="logo.png" alt="" width="72" height="72">
+
+		<h1 class="h3 mb-3 font-weight-normal">Contact us!</h1>
+
+		<input type=hidden name="orgid" value="00D1r000001nlmo">
+		<input type=hidden name="retURL" value="https://cloud50.github.io/done.html">
+
+
+		<label for="name" class="sr-only">Contact Name</label>
+		<input  id="name" maxlength="80" name="name" size="20" type="text" />
+		<br/>
+
+		<label for="email" class="sr-only">Email</label>
+		<input  id="email" maxlength="80" name="email" size="20" type="text" />
+		<br*>
+
+		<label for="phone" class="sr-only">Phone</label>
+		<input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+		<br/>
+
+		<label for="subject" class="sr-only">Subject</label>
+		<input  id="subject" maxlength="80" name="subject" size="20" type="text" />
+		<br/>
+
+		<label for="description" class="sr-only">Description</label>
+		<textarea name="description"></textarea><br>
+
+		<button class="btn btn-lg btn-primary btn-block" type="submit" name="submit" >Submit</button>
+		<p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+		</form>
+	</body>
+</html>
